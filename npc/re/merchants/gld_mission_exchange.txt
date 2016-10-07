@@ -710,6 +710,7 @@ S_PurchaseMedicine:
 				getitem getarg(1),1;
 				next;
 			} else {
+				mes "[ClickClick MeowMeow-GX]";
 				mes "One good medicine is worth 300 commemorative coins that you've raked and scraped...";
 				next;
 			}
@@ -735,9 +736,10 @@ S_PurchaseGift:
 				mes "[ClickClick MeowMeow-GX]";
 				mes "Thank you for using our service, meow!";
 				delitem 6615,.@price; // Siege_Guild_Coin
-				getitem .@itemid,1; // Old_Card_Album
+				getitem .@itemid,1;
 				next;
 			} else {
+				mes "[ClickClick MeowMeow-GX]";
 				mes "You need " + .@price + " Commemorative Coins in order to purchase the selected item.";
 				mes "You've decided to view other items.";
 				next;
